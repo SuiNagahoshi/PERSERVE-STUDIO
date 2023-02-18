@@ -1,5 +1,16 @@
+@use "sass:math";
+
 .anders {
     font-family: Anders;
+}
+
+body {
+    background-color: #222222;
+    color: white;
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .flex {
@@ -17,7 +28,7 @@
     top: 50%;
     right: 20px;
     transform: rotate(90deg);
-    margin-top: 238px;
+    margin-top: 320px;
     transform-origin: right top;
     ul {
         list-style: none;
@@ -26,7 +37,60 @@
         li {
             padding-left: 10px;
             padding-right: 10px;
+            letter-spacing: 0.2em;
         }
     }
     
+}
+
+.frame {
+    span {
+        position: fixed;
+        z-index: 1;
+        display: block;
+        background-color: white;
+    }
+    span:first-child {
+        top: 25px;
+        left: 25px;
+        height: 1px;
+        width: calc(100% - 175px);
+    }
+    span:nth-child(2) {
+        top: 25px;
+        left: 25px;
+        height: calc(100% - 50px);
+        width: 1px;
+    }
+    span:nth-child(3) {
+        bottom: 25px;
+        left: 25px;
+        height: 1px;
+        width: calc(100% - 100px);
+    }
+    span:nth-child(4) {
+        bottom: 25px;
+        right: 75px;
+        height: calc(100% - 125px);
+        width: 1px;
+    }
+    span:nth-child(5) {
+        top: 25px;
+        right: 150px;
+        height: 75px;
+        width: 1px;
+    }
+    span:nth-child(6) {
+        top: 100px;
+        right: 75px;
+        height: 1px;
+        width: 75px;
+    }
+    span:last-child {
+        top: 62px;
+        right: 60px;
+        height: 1.5px;
+        width: calc(1px * floor(math.sqrt(calc(math.pow(75, 2) + (math.pow(75, 2))))));
+        transform: rotate(45deg);
+    }
 }
