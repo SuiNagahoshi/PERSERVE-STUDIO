@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PERSERVE-STUDIO/static/css/main.e6c13ad2.css",
+    "main.js": "/PERSERVE-STUDIO/static/js/main.60946b61.js",
+    "index.html": "/PERSERVE-STUDIO/index.html",
+    "main.e6c13ad2.css.map": "/PERSERVE-STUDIO/static/css/main.e6c13ad2.css.map",
+    "main.60946b61.js.map": "/PERSERVE-STUDIO/static/js/main.60946b61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.60946b61.js"
+  ]
+}
