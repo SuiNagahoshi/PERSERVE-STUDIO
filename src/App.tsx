@@ -1,7 +1,7 @@
 import './styles/App.scss';
 
 import { Top} from './Top';
-import { Nav} from './Nav';
+import { Menu,  Nav} from './Nav';
 import { Frame} from './Frame';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <Nav />
       <Frame />
-      
+      <Menu />
     </>
   );
 }
