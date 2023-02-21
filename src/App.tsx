@@ -1,8 +1,16 @@
-import './App.css';
+import './styles/App.scss';
+
+import { Top} from './Top';
+import { Menu,  Nav} from './Nav';
+import { Frame} from './Frame';
 
 function App() {
   return (
-    <h1>Hello, World!</h1>
+    <>
+      <Nav />
+      <Frame />
+      <Menu />
+    </>
   );
 }
 

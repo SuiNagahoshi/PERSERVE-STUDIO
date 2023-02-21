@@ -1,0 +1,194 @@
+@use "sass:math";
+@import "./hamburgers/hamburgers.scss";
+
+.anders {
+    font-family: Anders;
+}
+
+body {
+    background-color: #222222;
+    color: white;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    ul {
+        list-style: none;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.aligin-r {
+    text-align: right;
+}
+
+.gnav {
+    /*position: fixed;
+    z-index: 5;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%) rotate(90deg);*/
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    right: 20px;
+    transform: rotate(90deg);
+    margin-top: 320px;
+    transform-origin: right top;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            padding-left: 10px;
+            padding-right: 10px;
+            letter-spacing: 0.2em;
+        }
+    }
+    
+}
+
+.frame {
+    span {
+        position: fixed;
+        z-index: 1;
+        display: block;
+        background-color: white;
+    }
+    span:first-child {
+        top: 25px;
+        left: 25px;
+        height: 1px;
+        width: calc(100% - 175px);
+    }
+    span:nth-child(2) {
+        top: 25px;
+        left: 25px;
+        height: calc(100% - 50px);
+        width: 1px;
+    }
+    span:nth-child(3) {
+        bottom: 25px;
+        left: 25px;
+        height: 1px;
+        width: calc(100% - 100px);
+    }
+    span:nth-child(4) {
+        bottom: 25px;
+        right: 75px;
+        height: calc(100% - 125px);
+        width: 1px;
+    }
+    span:nth-child(5) {
+        top: 25px;
+        right: 150px;
+        height: 75px;
+        width: 1px;
+    }
+    span:nth-child(6) {
+        top: 100px;
+        right: 75px;
+        height: 1px;
+        width: 75px;
+    }
+    span:last-child {
+        top: 62px;
+        right: 60px;
+        height: 1.5px;
+        width: calc(1px * floor(math.sqrt(calc(math.pow(75, 2) + (math.pow(75, 2))))));
+        transform: rotate(45deg);
+    }
+}
+
+#menu-icon, #menu-icon button {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 115px;
+    top: 65px;
+    z-index: 30;
+    button {
+        background-color: transparent;
+        border: none;
+        span {
+            left: 0;
+            right: 0;
+            background-color: white;
+            width: 30px;
+            &::after, &::before {
+                background-color: white;
+                width: 30px;
+            }
+            &::before {
+                top: -8px;
+            }
+            &::after {
+                top: 8px;
+            }
+        }
+    }
+}
+
+/*#menu-icon button:hover {
+    opacity: 1;
+    & span {
+        background-color: white;
+        &::before, &::after {
+            background-color: white;
+        }
+    }
+}
+
+#menu-icon button span {
+    background-color: rgb(215, 215, 215);
+    transition: background-color .2s linear;
+    &::before, &::after {
+        background-color: rgb(215, 215, 215);
+        transition: background-color .2s linear, transform .4s cubic-bezier(.77,0,.66,1.02);
+    }
+}
+*/
+#menu {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    right: -300px;
+    z-index: 10;
+    a {
+        z-index: 10;
+        font-size: 2em;
+        &:hover {
+            text-shadow: 0 0 0.4em rgb(127, 202, 255);
+        }
+    }
+    transition: transform .4s cubic-bezier(.77,0,.66,1.02);
+    ul {
+        text-align: right;
+        width: 100%;
+        padding: 0;
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+    }
+    li {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        a {
+            width: 100%;
+        }
+    }
+    .menu-wrapper {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+    }
+}
+#menu.open {
+    transform: translateX(-300px);
+}
