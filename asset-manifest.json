@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/PERSERVE-STUDIO/static/css/main.d20779e5.css",
-    "main.js": "/PERSERVE-STUDIO/static/js/main.2c6c99a0.js",
+    "main.css": "/PERSERVE-STUDIO/static/css/main.8025774c.css",
+    "main.js": "/PERSERVE-STUDIO/static/js/main.69fa6370.js",
     "index.html": "/PERSERVE-STUDIO/index.html",
-    "main.d20779e5.css.map": "/PERSERVE-STUDIO/static/css/main.d20779e5.css.map",
-    "main.2c6c99a0.js.map": "/PERSERVE-STUDIO/static/js/main.2c6c99a0.js.map"
+    "main.8025774c.css.map": "/PERSERVE-STUDIO/static/css/main.8025774c.css.map",
+    "main.69fa6370.js.map": "/PERSERVE-STUDIO/static/js/main.69fa6370.js.map"
   },
   "entrypoints": [
-    "static/css/main.d20779e5.css",
-    "static/js/main.2c6c99a0.js"
+    "static/css/main.8025774c.css",
+    "static/js/main.69fa6370.js"
   ]
 }
